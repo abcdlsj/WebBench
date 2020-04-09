@@ -17,6 +17,7 @@ ArchLinux 会显示找不到 <rpc/types.h>
 sudo pacman -S libtirpc
 sudo cp -r /usr/include/tirpc/{netconfig.h,rpc} /usr/local/include
 ```
+
 ## 命令行选项：
 
 
