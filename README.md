@@ -7,11 +7,17 @@ ctags
 
 ## 使用：
 
-	sudo make && sudo make install PREFIX=your_path_to_webbench
-  
+```shell
+sudo make && sudo make install PREFIX=your_path_to_webbench
+```
+
+ArchLinux 会显示找不到 <rpc/types.h>
+解决办法：
+```shell
+sudo pacman -S libtirpc
+sudo cp -r /usr/include/tirpc/{netconfig.h,rpc} /usr/local/include
+```
 ## 命令行选项：
-
-
 
 
 | 短参        | 长参数           | 作用   |
